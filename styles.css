@@ -1,0 +1,415 @@
+/*выделение строки при наведении*/
+tr:hover {
+    background: #ade0ba;
+}
+/*заголовок*/
+h1 {
+    color: #232323;
+}
+/*шрифт сайта*/
+body {
+    font-family:Arial Narrow;
+}
+/*размер шрифта при минимальном разрешении 800px*/
+@media (min-width: 800px) { 
+    body {
+        font-size: 18px;
+    }
+}
+/*размер шрифта при максимальном разрешении 800px*/
+@media (max-width: 800px) {
+    body {
+        font-size: 10px;
+    }
+}
+/*поля для ввода*/
+.fbInput {
+    display: inline-block;
+    margin-right: 20px;
+}
+/*поле для ввода города*/
+#lastButPubl {
+    margin-right: 0px;
+}
+/*основной блок*/
+.main_div {
+    width: 90%; 
+    margin: auto; 
+}
+/*таблица*/
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    text-align: center;
+}
+/*второй столбец таблицы*/
+td:nth-child(2)
+{
+    width: 35%;
+}
+/*таблица читателей*/
+.t_dataReaders
+{
+    width: 70%;
+}
+/*столбец таблицы*/
+.small {
+    width: 5%;
+}
+/*выпадающий список и поле ввода*/
+select {
+    border: 1px solid #CCC;
+    height: 28px;
+}
+
+input, select {
+    font-family:inherit;
+    font-size: inherit;
+}
+/*label для основных кнопок переключателей*/
+.lab {
+    padding: 10px;
+    background: #d1ddd4;
+    display: inline-block;
+    text-align: center;
+    color: #232323;
+    margin: 2px;
+}
+/*скрытие кнопок переключателей*/
+#abr_b {
+    display: none 
+}
+#f_b {
+    display: none 
+}
+#apg_b {
+    display: none 
+}
+#addb_b {
+    display: none 
+}
+#dr_b {
+    display: none 
+}
+/*кнопки переключатели при наведении*/
+#abr_b1:hover {
+    background: #ade0ba;
+    cursor: pointer;
+}
+#f_b1:hover {
+    background: #ade0ba;
+    cursor: pointer;
+}
+#apg_b1:hover {
+    background: #ade0ba;
+    cursor: pointer;
+}
+#addb_b1:hover {
+    background: #ade0ba;
+    cursor: pointer;
+}
+#dr_b1:hover {
+    background: #ade0ba;
+    cursor: pointer;
+}
+/*кпопки переключатели при нажатии*/
+#abr_b:checked ~ #abr_b1 {
+    background: #9ccaa8;
+}
+#f_b:checked ~ #f_b1 {
+    background: #9ccaa8;
+}
+#apg_b:checked ~ #apg_b1 {
+    background: #9ccaa8;
+}
+#addb_b:checked ~ #addb_b1 {
+    background: #9ccaa8;
+}
+#dr_b:checked ~ #dr_b1 {
+    background: #9ccaa8;
+}
+/*кнопка*/
+input[type=submit] {
+    background-color: #9ccaa8;
+    border: none;
+    color: #232323;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: inherit;
+}
+/*кнопка при наведении*/
+input[type=submit]:hover {
+    background-color: #ade0ba;
+}
+/*кнопка при нажатии*/
+input[type=submit]:active {
+    background-color: #c0f5cd;
+}
+/*неактивная кнопка*/
+input[type=submit]:disabled {
+    background-color: #ececec;
+    color: #b9b9b9;
+    cursor: default;
+}
+/*текстовое поле*/
+input[type=text] {
+    border: 1px solid #cccccc;
+    border-radius: 0px; 
+    background: white ;
+    outline: none; 
+    height: 24px; 
+    width: 200px; 
+    color: #232323;
+
+    margin-right: 5px;
+}
+/*числовое поле*/
+input[type=number] {
+    border: 1px solid #cccccc;
+    border-radius: 0px; 
+    background: white ;
+    outline: none; 
+    height: 24px; 
+    width: 200px; 
+    color: #232323;
+
+    margin-right: 5px;
+}
+/*поле с email*/
+input[type=email] {
+    border: 1px solid #cccccc;
+    border-radius: 0px; 
+    background: white ;
+    outline: none; 
+    height: 24px; 
+    width: 200px; 
+    color: #232323;
+
+    margin-right: 5px;
+}
+/*поле с телефоном*/
+input[type=tel] {
+    border: 1px solid #cccccc;
+    border-radius: 0px; 
+    background: white ;
+    outline: none; 
+    height: 24px; 
+    width: 200px; 
+    color: #232323;
+
+    margin-right: 5px;
+}
+/*столбцы, строки и ячейки таблицы*/
+th {
+    background: #cbd8ce;
+    color: #232323;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+tr {
+    background: #e2efe5;
+}
+td:first-child {
+    width: 4%; 
+}
+/*крайний столбец таблицы*/
+.tdBut {
+    width: 20px;
+    background: white;
+}
+
+/*видимость основных блоков*/
+.allBooksReader
+{
+    display:block;
+
+}
+.chReader
+{
+    display:block;
+
+}
+.findBooksForReader
+{
+    display:none;
+
+}
+.addAPG
+{
+    display:none;
+
+}
+.addBooks
+{
+    display:none;
+
+}
+.dataFind
+{
+    display:none;
+
+}
+
+/*видимость блоков при переключении основных кнопок*/
+/*сдача*/
+#abr_b:checked ~ .allBooksReader
+{
+    display:block;
+}  
+#abr_b:checked ~ .chReader
+{
+    display:block;
+}  
+#abr_b:checked ~ .findBooksForReader
+{
+    display:none;
+}
+#abr_b:checked ~ .addAPG
+{
+    display:none;
+} 
+#abr_b:checked ~ .addBooks
+{
+    display:none;
+} 
+#abr_b:checked ~ .dataFind
+{
+    display:none;
+} 
+
+/*выдача*/
+#f_b:checked ~ .allBooksReader
+{
+    display:none;
+}  
+#f_b:checked ~ .findBooksForReader
+{
+    display:block;
+}
+#f_b:checked ~ .chReader
+{
+    display:block;
+} 
+#f_b:checked ~ .addAPG
+{
+    display:none;
+} 
+#f_b:checked ~ .addBooks
+{
+    display:none;
+} 
+#f_b:checked ~ .dataFind
+{
+    display:none;
+} 
+/*добавление читателя*/
+#apg_b:checked ~ .allBooksReader
+{
+    display:none;
+}  
+#apg_b:checked ~ .findBooksForReader
+{
+    display:none;
+}
+#apg_b:checked ~ .chReader
+{
+    display:none;
+} 
+#apg_b:checked ~ .addAPG
+{
+    display:block;
+} 
+#apg_b:checked ~ .addBooks
+{
+    display:none;
+} 
+#apg_b:checked ~ .dataFind
+{
+    display:none;
+} 
+/*добавление книги*/
+#addb_b:checked ~ .allBooksReader
+{
+    display:none;
+}  
+#addb_b:checked ~ .findBooksForReader
+{
+    display:none;
+}
+#addb_b:checked ~ .chReader
+{
+    display:none;
+} 
+#addb_b:checked ~ .addAPG
+{
+    display:none;
+} 
+#addb_b:checked ~ .addBooks
+{
+    display:block;
+}
+#addb_b:checked ~ .dataFind
+{
+    display:none;
+} 
+
+/*поиск*/
+#dr_b:checked ~ .allBooksReader
+{
+    display:none;
+}  
+#dr_b:checked ~ .findBooksForReader
+{
+    display:none;
+}
+#dr_b:checked ~ .chReader
+{
+    display:none;
+} 
+#dr_b:checked ~ .addAPG
+{
+    display:none;
+} 
+#dr_b:checked ~ .addBooks
+{
+    display:none;
+}
+#dr_b:checked ~ .dataFind
+{
+    display:block;
+} 
+
+
+/*флажок*/
+.ltr {
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin-left: 2px;
+    border: 1px solid #cccccc;
+    border-radius: 0px; 
+    cursor: pointer;
+}
+/*флажок при нажатии*/
+input[type=checkbox]:checked ~ .ltr {
+    background-color: #9ccaa8;
+}
+/*скрытие флажка*/
+input[type=checkbox] {
+    display:none;
+}
+/*логотип*/
+.logo {
+    display: inline-block;
+}
+/*картинка*/
+img {
+    width: 3vw;
+    min-width: 20px;
+    max-width: 40px;
+}
+
